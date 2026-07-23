@@ -1,159 +1,207 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Yoh Bi N. · Portfolio étudiant informatique</title>
-    <!-- Font Awesome 6 (gratuit, icônes modernes) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yoh Bi Nene Regis — Développeur Backend &amp; IA</title>
+<meta name="description" content="Portfolio de Yoh Bi Nene Regis — Développeur Backend (Java, Spring Boot, PHP), IA &amp; Automatisation, Data &amp; Power BI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
-    <!-- EN-TÊTE avec photo à GAUCHE -->
-    <div class="header-flex">
-        <div class="photo-wrapper">
-            <img src="Video_Cv/photo-nene-pros.jpg" alt="Photo Nene D.">
-        </div>
-        <div class="header-text">
-            <h1>Yoh Bi Nene</h1>
-            <div class="badge-etudiant">
-                <i class="fas fa-laptop-code"></i> Étudiant en informatique – 3e année
-            </div>
-            <div class="stage-ribbon">
-                <div class="stage-highlight">
-                    <i class="fas fa-brief-clock"></i> Stage long · 6 Mois chez <strong>Flyfret</strong> (2024-2025)
-                </div>
-            </div>
-            <p style="margin: 0.6rem 0 0.2rem; color: #94a3b8;">Passionné par le développement Data, IA & l'automatisation.</p>
-            <a href="Video_Cv/Yoh_Bi_Nene-CV-BTS-Fran)2.pdf.pdf" class="btn-cv" download>
-                <i class="fas fa-file-pdf"></i> Télécharger mon CV (PDF)
-            </a>
-        </div>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<header class="site-header">
+  <a href="#top" class="brand">
+    <span class="brand-prompt">~/</span><span class="brand-name">Nene_Bi</span>
+  </a>
+  <nav class="main-nav" aria-label="Navigation principale">
+    <a href="#tracks">Compétences</a>
+    <a href="#experience">Expérience</a>
+    <a href="#projects">Projets</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn btn-ghost header-cta" href="Video_Cv/YohBi-CV-Dev_Informatique).pdf.pdf" download  target="_blank" rel="noopener">
+    <i class="fa-regular fa-file-pdf"></i> CV
+</a>
+</header>
+
+<main id="top">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero">
+    <div class="hero-copy">
+      <p class="eyebrow">Disponible pour un stage ou une embauche</p>
+      <h1>Yoh Bi Nene Regis</h1>
+      <p class="hero-role">Développeur <span class="accent-backend">Backend</span>, <span class="accent-ia">IA &amp; Automatisation</span> et <span class="accent-data">Data</span></p>
+      <p class="hero-desc">Développeur Back-end passionné par la conception d'API performantes, les applications web modernes et l'automatisation par l'intelligence artificielle. J'aime transformer les idées en solutions concrètes grâce à Spring Boot, React, Python et Power BI.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary"
+           href="https://www.linkedin.com/in/bi-nene-régis-yoh-694639317"
+           target="_blank"
+           rel="noopener">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a class="btn btn-outline"
+           href="https://github.com/koffi-bi"
+           target="_blank"
+           rel="noopener">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a class="btn btn-outline" href="mailto:bibahboris@gmail.com?subject=Opportunité professionnelle&body=Bonjour Yoh Bi,">
+          <i class="fa-regular fa-envelope"></i> E-mail
+        </a>
+        
+      </div>
     </div>
 
-    <div class="main-content">
-        <!-- SECTION PROJETS -->
-        <section>
-            <h2><i class="fas fa-code-branch"></i> Projets réalisés</h2>
-            <div class="projets-grid">
-                <div class="projet-card">
-                    <h3> CvMatchIA</h3>
-                    <p>Application web. Analyse Cv grace a L'IA. Recherche un profil et l'IA te le retrouve en fonction des candidats inscrit sur l'Application.</p>
-                    <div class="tech-stack">
-                        <span class="tech">Python</span>
-                        <span class="tech">FastAPI</span>
-                        <span class="tech">HTML, CSS & JS</span>
-                        <span class="tech">PHP mysql</span>
-                    </div>
-                    <div class="projet-links">
-                        <a href="https://github.com/koffi-bi/CvMatch_projetB.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://nene.cvmatch.space/" target="_blank"><i class="fas fa-external-link-alt"></i> Démo live</a>
-                    </div>
-                </div>
-                <div class="projet-card">
-                    <h3> Risque d'Agression</h3>
-                    <p> Reduction du risque d'Agression à Abidjan. Tu choisis une commune d'Abidjan, puis tu renseigne quelques info: l'heures, dates...et L'IA te fait une prediction.</p>
-                    <div class="tech-stack">
-                        <span class="tech">Python</span>
-                        <span class="tech">Php</span>
-                        <span class="tech">Mysql</span>
-                        <span class="tech">Html, Css & JS</span>
-                    </div>
-                    <div class="projet-links">
-                        <a href="https://github.com/koffi-bi/Soutenance-prairie.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://flytrack-demo.netlify.app" target="_blank"><i class="fas fa-external-link-alt"></i> </a>
-                    </div>
-                </div>
-                <div class="projet-card">
-                    <h3>Agent IA d’analyse de données</h3>
-                    <p>Ce programme est un agent d’analyse de données avec interface web qui permet à un utilisateur de téléverser un fichier CSV pour obtenir automatiquement un aperçu et une analyse des données.</p>
-                    <div class="tech-stack">
-                        <span class="tech">Agent IA</span>
-                        <span class="tech">Python</span>
-                        <span class="tech">Bibliothèque Gradio, Matplotlib</span>
-                    </div>
-                    <div class="projet-links">
-                        <a href="https://github.com/koffi-bi/MasterClass3-Formation.git" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="#" style="cursor:default;"><i class="fas fa-globe"></i></a>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
-
-        <!-- SECTION CV avec stage Flyfret -->
-         <section>
-            <h2><i class="fas fa-graduation-cap"></i> Éléments clés du CV</h2>
-            <div class="cv-elements">
-                <!-- 3 colonnes horizontales (Formation / Compétences / Expérience autre) -->
-                <div class="cv-grid">
-                    <div class="cv-col">
-                        <h3><i class="fas fa-university"></i> Education</h3>
-                        <ul>
-                            <li><i class="fas fa-certificate"></i> 2025 · Remise de diplome(BTS)</li>
-                            <li><i class="fas fa-calendar-alt"></i> 2022 – 2024 · <strong>BTS Informatique</strong>IIPEA de Cocody</li>
-                    
-                            <li><i class="fas fa-certificate"></i> 2022 · <strong>BAC serie D</strong>Lycée Classique d'Abidjan</li>
-                            
-                        </ul>
-                    </div>
-                    <div class="cv-col">
-                        <h3><i class="fas fa-microchip"></i> Compétences</h3>
-                        <ul>
-                            <li><i class="fab fa-python"></i> Python, Machine Learning, Power BI </li>
-                            <li><i class="fas fa-database"></i> PHP - SQL - ProgreSQL</li>
-                            <li><i class="fab fa-git-alt"></i> Git, GitHub, Agent IA avec n8n</li>
-                            <li><i class="fas fa-code"></i> HTML5, CSS3, JavaScript</li>
-                        </ul>
-                    </div>
-                    <div class="cv-col">
-                        <h3><i class="fas fa-briefcase"></i> Autres expériences</h3>
-                        <ul>
-                            
-                            <li><i class="fas fa-users"></i> Stagiaire à SIMPLON</li>
-                            <li><i class="fa-solid fa-graduation-cap"></i> Stage Ecole à Flyfret</li>
-                            <li><i class="fas fa-users"></i> Hackathon 2023 · Devfest à l’ESATIC</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- BANDE HORIZONTALE PLEINE LARGEUR : Stage Flyfret -->
-                <div class="stage-fullwidth">
-                    <div class="stage-header">
-                        <i class="fa-solid fa-user-graduate"></i>
-                        <h3>Stage · Simplon (Depuis le 20 Fevrier 2026)</h3>
-                         <!-- Ajouter le calendrier des taches -->
-                    </div>
-                    <div class="stage-content">
-                        <div class="stage-description">
-                            <p><strong>Développement de solutions en data et intelligence artificielle</strong> au sein de l'équipe Dev Simplonnien.</p>
-                            <p>Conception et réalisation de projets d’analyse de données et de modèles IA, puis automatisation.</p>
-                            <div class="stage-tech">
-                                <span>Python</span>
-                                <span>JS</span>
-                                <span>SQL</span>
-                                <span>Power Bi</span>
-                                <span>Agent IA </span>
-                                <span>Jira</span>
-                            </div>
-                        </div>
-                        <!-- section-mission effectuer à ajouter bientot -->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <div class="contact-bar">
-            <a href="https://github.com/koffi-bi/CvMatch_projetB.git" target="_blank"><i class="fab fa-github"></i> GitHub / Projets</a>
-            <a href="https://www.linkedin.com/in/bi-nene-régis-yoh-694639317" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="mailto:bibahboris@gmail.com"><i class="fas fa-envelope"></i> Mon E-mail</a>
-            <a href="Video_Cv/Yoh_Bi_Nene-CV-BTS-Fran)2.pdf.pdf" download><i class="fas fa-download"></i> CV complet</a>
-        </div>
+     <div class="terminal" role="img" aria-label="Extrait d'API décrivant le profil de Regis">
+      <div class="terminal-bar">
+        <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+        <span class="terminal-title">GET /api/regis/profile</span>
+      </div>
+      <pre class="terminal-body"><code><span class="tk-muted">$</span> <span class="tk-cmd">curl</span> api.regis.dev/profile
+<span class="tk-status">HTTP/1.1 200 OK</span>
+<span class="tk-key">{</span>
+  <span class="tk-key">"name"</span>: <span class="tk-str">"Yoh Bi Nene Regis"</span>,
+  <span class="tk-key">"title"</span>: <span class="tk-str">""title": "Développeur Back-end | Data, IA&Automatisation","</span>,
+  <span class="tk-key">"tracks"</span>: [
+    <span class="tk-str">"backend"</span>, <span class="tk-str">"ia_automation"</span>, <span class="tk-str">"data"</span>
+  ],
+  <span class="tk-key">"stack"</span>: [
+    <span class="tk-str">"Java"</span>, <span class="tk-str">"Spring Boot"</span>, <span class="tk-str">"PHP/Laravel"</span>,
+    <span class="tk-str">"Python"</span>, <span class="tk-str">"FastAPI"</span>, <span class="tk-str">"n8n"</span>,
+    <span class="tk-str">"PostgreSQL"</span>, <span class="tk-str">"MySQL"</span>, <span class="tk-str">"Power BI"</span>
+  ],
+  <span class="tk-key">"location"</span>: <span class="tk-str">"Abidjan, CI"</span>,
+  <span class="tk-key">"status"</span>: <span class="tk-str tk-status-ok">"disponible"</span>
+<span class="tk-key">}</span></code></pre>
     </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about">
+    <p><span class="drop">J</span>e suis développeur backend passionné par l'IA et l'automatisation. Formé chez Simplon Côte d'Ivoire, je conçois des API robustes, développe des agents intelligents et transforme des données en tableaux de bord exploitables. Ce portfolio est rangé en trois familles de compétences — parcourez celle qui correspond au poste que vous recrutez.</p>
+  </section>
+
+  <!-- ===================== TRACK TABS ===================== -->
+  <section class="tracks" id="tracks">
+    <div class="tracks-head">
+      <h2>Trois façons de travailler avec moi</h2>
+      <p class="section-sub">Chaque piste a sa propre couleur — retrouvez-la sur les projets et l'expérience ci-dessous.</p>
+    </div>
+
+    <div class="track-tabs" role="tablist" aria-label="Filtrer les projets par compétence">
+      <button class="track-tab is-active" data-track="all" role="tab" aria-selected="true">Tout voir</button>
+      <button class="track-tab" data-track="backend" role="tab" aria-selected="false">
+        <span class="tab-dot dot-backend"></span>Backend
+      </button>
+      <button class="track-tab" data-track="ia" role="tab" aria-selected="false">
+        <span class="tab-dot dot-ia"></span>IA &amp; Automatisation
+      </button>
+      <button class="track-tab" data-track="data" role="tab" aria-selected="false">
+        <span class="tab-dot dot-data"></span>Data &amp; Power BI
+      </button>
+    </div>
+
+    <div class="track-summary">
+      <article class="track-card track-backend">
+        <span class="tab-dot dot-backend"></span>
+        <h3>Backend</h3>
+        <p>Conception d'API REST sécurisées, développement d'applications web avec Spring Boot, Laravel et FastAPI, gestion des bases PostgreSQL/MySQL et documentation des API avec Swagger/OpenAPI.</p>
+      </article>
+      <article class="track-card track-ia">
+        <span class="tab-dot dot-ia"></span>
+        <h3>IA &amp; Automatisation</h3>
+        <p>Développement d'agents IA, intégration de modèles de langage (LLM), création de chatbots, automatisation de workflows avec n8n et développement de services IA avec FastAPI.</p>
+      </article>
+      <article class="track-card track-data">
+        <span class="tab-dot dot-data"></span>
+        <h3>Data &amp; Power BI</h3>
+        <p>Analyse, traitement et visualisation de données avec SQL, Python et Power BI afin de produire des tableaux de bord facilitant la prise de décision.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section class="experience" id="experience">
+    <h2>Expérience</h2>
+    <ol class="timeline">
+      <li class="timeline-item" data-track="ia">
+        <div class="timeline-date">depuis fév. 2026</div>
+        <div class="timeline-content">
+          <h3>Stagiaire Développeur Data &amp; IA <span class="timeline-org">— Simplon Côte d'Ivoire</span></h3>
+          <p>Chatbots, agents IA, RAG, automatisation avec n8n, modèles de Machine Learning, APIs FastAPI.</p>
+        </div>
+      </li>
+      <li class="timeline-item" data-track="backend">
+        <div class="timeline-date">Nov. 2024 – Avril 2025</div>
+        <div class="timeline-content">
+          <h3>Développeur Backend (stage école) <span class="timeline-org">— FlyFret</span></h3>
+          <p>Back-end Laravel/MySQL de l'application interne (colis, authentification, tableau de bord) et site officiel HTML/CSS/JS, en équipe de 2.</p>
+        </div>
+      </li>
+      <li class="timeline-item" data-track="backend">
+        <div class="timeline-date">2023 – 2024</div>
+        <div class="timeline-content">
+          <h3>Participant — Hackathon Devfest <span class="timeline-org">ESATIC</span></h3>
+          <p>Back-end PHP/MySQL d'une plateforme de location de voitures en ligne, en équipe de 3.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section class="projects" id="projects">
+    <h2>Projets</h2>
+    <p class="section-sub"></p>
+    <div class="project-grid" id="project-grid"><!-- injecté par script.js --></div>
+  </section>
+
+</main>
+
+<!-- ===================== CONTACT / FOOTER ===================== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-main">
+    <h2>Travaillons ensemble</h2>
+    <p>Ouvert à un stage de pré-embauche — backend, IA/automatisation ou data.</p>
+    <div class="footer-links">
+
+  <a href="mailto:bibahboris@gmail.com">
+    <i class="fa-regular fa-envelope"></i>
+    bibahboris@gmail.com
+  </a>
+
+  <a href="tel:+2250710015389">
+    <i class="fa-solid fa-phone"></i>
+    07-10-01-53-89
+  </a>
+
+  <a href="https://github.com/koffi-bi" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>
+    github.com/koffi-bi
+  </a>
+
+  <a href="https://www.linkedin.com/in/bi-nene-régis-yoh-694639317" target="_blank" rel="noopener">
+    <i class="fa-brands fa-linkedin"></i>
+    LinkedIn
+  </a>
+
+
+  <a href="mailto:asaintclair.ext@simplon.co">
+    <i class="fa-solid fa-user-check"></i>
+    Référence : M. A. Saint-Clair
+  </a>
+
 </div>
+  </div>
+  <p class="footer-note">2 Plateau, Abidjan, Côte d'Ivoire · Dernière mise à jour : <span id="updated-year"></span></p>
+</footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
